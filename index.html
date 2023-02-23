@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <title>priyaa</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+            });
+
+        });
+
+
+
+        </script>
+        <style>
+          .carousel-item {
+              height: 35rem;
+          }
+      </style>
+    </head>
+
+<body>
+    <nav>
+        <label class ="logo">priya photography</label>
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+   
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="https://www.shutterstock.com/image-photo/happy-birthday-party-group-friends-260nw-1685260708.jpg" width="800" height="500" alt="..." align="center" >
+              <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color:  #fff;">From pictures to moments</h5>
+                  
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="data:image/jpeg;base64,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" class="d-block width="500"  height="500"alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Capturing your special moments</h5>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="https://www.superiorwallpapers.com/images/lthumbs/2015-06/8409_Nature-in-blue-color-HD.jpg" class="d-block width="500" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Photographing your moments forever</h5>
+              </div>
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+    <br>
+    <center>
+        <h1>Our Photo Skills</h1>
+        <div class="row">
+            <div class="column">
+              <img src="https://media.istockphoto.com/id/1188908240/photo/children-with-cake-standing-around-table-on-birthday-party-in-garden-in-summer.jpg?b=1&s=612x612&w=0&k=20&c=iOOcUGTkZwlIJqqagBN6RlFoSQ8jeadY6xQ1q5P3lJI=" style="width:100%">
+              <a href="bday.html"><p>BIRTHDAY PHOTOGRAPHY</p></a>
+            </div>
+            <div class="column">
+              <img src="https://media.istockphoto.com/id/1433789398/photo/silhouette-of-a-girl-riding-a-bike-on-the-beach-with-a-vibrant-sunset-in-the-background.jpg?s=170667a&w=0&k=20&c=lfptI5U8BTztwIgJEbdEd0EIYVce7Z3Z_POQ5fNGLoM=">
+              <a href="solo.html"><p>SOLO PHOTOGRAPHY</p></a>
+            </div>
+          </div>
+    
+    
+          <div class="row">
+            <div class="column">
+              <img src="https://i.pinimg.com/736x/f6/35/65/f63565acf50add9c84a63150fcbdc44d--holiday-wallpaper-hd-wallpaper.jpg"  style="width:100%">
+              <a href="fest.html"><p>FESTIVAL PHOTOGRAPHY</p></a>
+            </div>
+            <div class="column">
+              <img src="https://thumbs.dreamstime.com/z/group-friends-jumping-beach-summer-holidays-vacation-happy-people-concept-34775878.jpg"  style="width:100%">
+              <a href="squad.html"><p>SQUAD PHOTOGRAPHY</p></a>
+            </div>
+          </div>
+    </center>
+    
+    
+   
+        <section class="footer ">
+            <div class="social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-snapchat"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+              
+                <li>
+                    <a href="about.html">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+             <p class="copyright">
+              Copyright &#169; 2022 Flick. All rights reserved
+            </p><br>
+        </section>
+    </body>
+    </html>
